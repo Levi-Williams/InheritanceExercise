@@ -29,11 +29,45 @@ namespace Inheritance
              * Creatively display the class member values 
              */
 
+            var penguin = new Bird();
+
+            penguin.canFly = false;
+            penguin.environmentsLived = "Arctic";
+            penguin.eatsMeat = true;
+            penguin.wingspan = 30;
+            penguin.amountOfLegs = 2;
+
+            Console.WriteLine($"Let me tell you some facts about the penguin! " +
+                $"Can it fly?   {penguin.canFly}" +
+                $"  Where does it live?     {penguin.environmentsLived}" +
+                $"  Does it eat meat?   {penguin.eatsMeat}" +
+                $"  What is its wingspan?   {penguin.wingspan}" +
+                $"  Want to know how many legs it has?  {penguin.amountOfLegs}");
+
+            Console.WriteLine("Finally, want to hear what it sounds like?");
+
+            penguin.MakeBirdNnoises();
+
+
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+
+            var komodoDragon = new Reptile();
+            komodoDragon.canSlither = false;
+            komodoDragon.isWarmBlooded = false;
+            komodoDragon.livesOnLand = true;
+            komodoDragon.eatsMeat = true;
+            komodoDragon.favoriteFood = "Deer";
+
+            Console.WriteLine($"Let me tell you some facts about the Komodo Dragon now!" +
+                $"Does it slither?  {komodoDragon.canSlither}" +
+                $"  Is it warm blooded?     {komodoDragon.isWarmBlooded}" +
+                $"  Does it live primarily on land?     {komodoDragon.livesOnLand}" +
+                $"  Does it eat meat?   {komodoDragon.eatsMeat}" +
+                $"  What is its favorite food?  {komodoDragon.favoriteFood}");
         }
     }
 }
